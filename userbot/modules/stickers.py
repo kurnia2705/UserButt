@@ -24,7 +24,7 @@ KANGING_STR = [
 ]
 
 
-@register(outgoing=True, pattern="^.kang")
+@register(outgoing=True, pattern="^.maling")
 async def kang(args):
     """ For .kang command, kangs stickers or creates new ones. """
     user = await bot.get_me()
@@ -228,8 +228,8 @@ async def kang(args):
                 # Ensure user doesn't get spamming notifications
                 await bot.send_read_acknowledge(conv.chat_id)
 
-        await args.edit(f"`Kanged successfully!`\
-            \n[Click here](t.me/addstickers/{packname}) to see my pack",
+        await args.edit(f"`Maling Sukses lur`\
+            \n[Klik Disini](t.me/addstickers/{packname}) kalo mau liat hasil Maling awokwok",
                         parse_mode='md')
 
 
